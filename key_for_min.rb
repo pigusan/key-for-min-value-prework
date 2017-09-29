@@ -3,10 +3,11 @@
 
 def key_for_min_value(name_hash)
   smallest = 100000
+  key = nil
   name_hash.each do |key, value|
     if value < smallest
       smallest = value
-      key
+      key = key
     end
   end
 end
